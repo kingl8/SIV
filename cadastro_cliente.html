@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <title>Cadastro de Funcionário</title>
+</head>
+
+<body>
+
+ <!--Inicio do Site-->
+ <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="t_principal.html"><img src="img/box.svg"> SIV - Sistema de Informação de Vendas</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <!--Menu Funcionário-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Funcionário
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="cadastro_func.html">Novo</a></li>
+                  <li><a class="dropdown-item" href="#">Lista</a></li>
+                  <li><a class="dropdown-item" href="#">Atualizar</a></li>
+                </ul>
+              </li>
+              <!--Menu Cliente-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cliente
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="cadastro_cliente.html">Novo</a></li>
+                  <li><a class="dropdown-item" href="#">Lista</a></li>
+                  <li><a class="dropdown-item" href="#">Atualizar</a></li>
+                  <li><a class="dropdown-item" href="#">Excluir</a></li>
+                </ul>
+              </li>
+              <!-- Menu Pedido-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pedido
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Novo</a></li>
+                  <li><a class="dropdown-item" href="#">Lista</a></li>
+                  <li><a class="dropdown-item" href="#">Atualizar</a></li>
+                  <li><a class="dropdown-item" href="#">Excluir</a></li>
+                </ul>
+              </li>
+              <!--Relatórios-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Relatórios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Novo</a></li>
+                  <li><a class="dropdown-item" href="#">Lista</a></li>
+                  <li><a class="dropdown-item" href="#">Atualizar</a></li>
+                  <li><a class="dropdown-item" href="#">Excluir</a></li>
+                </ul>
+              </li>
+              <!--Ferramentas administrativas-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Administrador
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Promover Usários</a></li>
+                  <li><a class="dropdown-item" href="#">Listar Usuário</a></li>
+                  <li><a class="dropdown-item" href="#">Atualizar Senha do Usuário</a></li>
+                  <li><a class="dropdown-item" href="#">Excluir Usuário</a></li>
+                </ul>
+              </li>
+            <!--Botão de Sair-->
+            <div>
+                <a href="login.html"><button type="button" class="btn btn-danger">Sair</button></a> 
+            </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!--Conteudo principal-->
+    <main>
+      <!--
+      <div class="container">
+        <h3>Cadastro de Cliente</h3>
+      </div>
+      -->
+        <form class="row g-3">
+            <div class="row g-3">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Last name">
+                </div>
+              </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Insira a sua senha">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Endereço">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Cidade</label>
+              <select id="inputState" class="form-select">
+                <option selected>Macapá</option>
+                <option>Santana</option>
+                <option>Laranjal do Jari</option>
+                <option>Porto Grande</option>
+                <option>Serra do Navio</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">CEP</label>
+              <input type="text" class="form-control" id="inputZip" placeholder="Insira o CEP">
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="inputel" placeholder="(xx)xxxxx-xxxx">
+              </div>
+              
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Verifique-me
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+          </form>
+
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
